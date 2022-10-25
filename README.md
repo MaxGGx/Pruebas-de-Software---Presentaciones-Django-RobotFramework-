@@ -11,8 +11,8 @@ Desarrollo de aplicación Web basada en Django junto a Robot Framework para desa
 - Clonar el repositorio
 - En la carpeta del repositorio crear un entorno virtual
 - Instalar todos los paquetes indicados por "requirements.txt" en el entorno virtual
-- Iniciar el entorno virtual y ejecutar dentro de la carpeta recetario/recetario
-	py manage.py runserver
+- Iniciar el entorno virtual y ejecutar dentro de la carpeta recetario/recetario:<br>
+	``py manage.py runserver``
 - Entrar al sitio indicado en la consola (se recomienda realizarlo dentro de una ventana en incógnito)
 
 ## Construido con 🛠️

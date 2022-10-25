@@ -59,8 +59,8 @@ body.open .overlay {
 }
 
 .burger-avatar {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   transition: 0.4s;
 }
 
@@ -74,13 +74,13 @@ body.open .burger-avatar {
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("./assets/icon-burger.svg");
+  background-image: url("../assets/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 body.open .burger-icon {
-  background-image: url("./assets/icon-close.svg");
+  background-image: url("../assets/icon-close.svg");
 }
 
 .sidebar {

@@ -50,8 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'DjangoLibrary.middleware.AutologinAuthenticationMiddleware',
-    'DjangoLibrary.middleware.FactoryBoyMiddleware',
-    'DjangoLibrary.middleware.QuerySetMiddleware',
+    #'DjangoLibrary.middleware.FactoryBoyMiddleware',
+    #'DjangoLibrary.middleware.QuerySetMiddleware',
 ]
 
 ROOT_URLCONF = 'recetario.urls'

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.8.3 on win32)" generated="20221026 23:50:58.446" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\luisa\OneDrive\Documents\Github\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\test.robot">
+<kw name="Start Django and open Browser" type="SETUP">
+<kw name="Start Django" library="DjangoLibrary">
+<doc>Start the Django server.</doc>
+<status status="PASS" starttime="20221026 23:50:58.604" endtime="20221026 23:50:59.987"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221026 23:50:59.988" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8000/'.</msg>
+<status status="PASS" starttime="20221026 23:50:59.987" endtime="20221026 23:51:03.951"/>
+</kw>
+<status status="PASS" starttime="20221026 23:50:58.604" endtime="20221026 23:51:03.951"/>
+</kw>
+<test id="s1-t1" name="Scenario: As a visitor I can visit the django default page" line="30">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221026 23:51:03.952" level="INFO">Opening url 'http://127.0.0.1:8000/'</msg>
+<status status="PASS" starttime="20221026 23:51:03.952" endtime="20221026 23:51:03.976"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id=explanation</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221026 23:51:03.976" endtime="20221026 23:51:03.988"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Ver recetas</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221026 23:51:03.997" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221026 23:51:03.988" endtime="20221026 23:51:03.997"/>
+</kw>
+<status status="PASS" starttime="20221026 23:51:03.951" endtime="20221026 23:51:03.997"/>
+</test>
+<doc>Django Robot Tests</doc>
+<status status="PASS" starttime="20221026 23:50:58.447" endtime="20221026 23:51:03.998"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

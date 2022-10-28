@@ -45,7 +45,7 @@ Scenario: Ver receta
   Go To  ${SERVER}
   Wait until page contains element  id=explanation
   Page Should Contain  Ver recetas
-  Page Should Contain  Sopaipilla
+  Page Should Contain  Sopaipilla2
   Click Link  name:verReceta
   Page Should Contain  Preparacion:
 

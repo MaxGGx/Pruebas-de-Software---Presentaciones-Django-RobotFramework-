@@ -1,522 +1,522 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0 (Python 3.9.1 on win32)" generated="20221027 22:59:26.479" rpa="false" schemaversion="3">
-<suite id="s1" name="Test" source="D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\test.robot">
+<robot generator="Robot 6.0 (Python 3.10.4 on win32)" generated="20221027 22:07:33.958" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\test.robot">
 <kw name="open Browserr" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221027 22:59:26.716" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/'.</msg>
-<status status="PASS" starttime="20221027 22:59:26.716" endtime="20221027 22:59:28.364"/>
+<msg timestamp="20221027 22:07:34.478" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/'.</msg>
+<status status="PASS" starttime="20221027 22:07:34.477" endtime="20221027 22:07:36.951"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:26.716" endtime="20221027 22:59:28.365"/>
+<status status="PASS" starttime="20221027 22:07:34.477" endtime="20221027 22:07:36.952"/>
 </kw>
 <test id="s1-t1" name="Scenario: Agregar una receta con el formato incorrecto - Ingredientes" line="28">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 22:59:28.365" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 22:59:28.365" endtime="20221027 22:59:28.390"/>
+<msg timestamp="20221027 22:07:36.954" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<status status="PASS" starttime="20221027 22:07:36.954" endtime="20221027 22:07:36.995"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id=explanation</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 22:59:28.391" endtime="20221027 22:59:28.402"/>
+<status status="PASS" starttime="20221027 22:07:36.996" endtime="20221027 22:07:37.013"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:28.412" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.403" endtime="20221027 22:59:28.413"/>
+<msg timestamp="20221027 22:07:37.029" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.013" endtime="20221027 22:07:37.030"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:anadirReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.414" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.413" endtime="20221027 22:59:28.522"/>
+<msg timestamp="20221027 22:07:37.031" level="INFO">Clicking button 'id:anadirReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.030" endtime="20221027 22:07:37.298"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Añadir receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:28.532" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.523" endtime="20221027 22:59:28.532"/>
+<msg timestamp="20221027 22:07:37.314" level="INFO">Current page contains text 'Añadir receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.298" endtime="20221027 22:07:37.315"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.533" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.532" endtime="20221027 22:59:28.598"/>
+<msg timestamp="20221027 22:07:37.316" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.315" endtime="20221027 22:07:37.428"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina Huevos Zapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.598" level="INFO">Typing text 'Harina Huevos Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.598" endtime="20221027 22:59:28.668"/>
+<msg timestamp="20221027 22:07:37.429" level="INFO">Typing text 'Harina Huevos Zapallo' into text field 'name:ingredientes'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.428" endtime="20221027 22:07:37.566"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.669" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:37.567" level="INFO">Typing text 'Paso1
 Paso2
 Paso3' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.668" endtime="20221027 22:59:28.736"/>
+<status status="PASS" starttime="20221027 22:07:37.566" endtime="20221027 22:07:37.682"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ROBOT</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.737" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.736" endtime="20221027 22:59:28.793"/>
+<msg timestamp="20221027 22:07:37.683" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.683" endtime="20221027 22:07:37.783"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.794" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:28.793" endtime="20221027 22:59:28.819"/>
+<msg timestamp="20221027 22:07:37.784" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:37.783" endtime="20221027 22:07:37.827"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:28.820" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:28.819" endtime="20221027 22:59:28.865"/>
+<msg timestamp="20221027 22:07:37.828" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:37.827" endtime="20221027 22:07:37.897"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221027 22:59:28.883" level="INFO">Element 'id:failed-alert' is displayed.</msg>
-<status status="PASS" starttime="20221027 22:59:28.866" endtime="20221027 22:59:28.883"/>
+<msg timestamp="20221027 22:07:37.979" level="INFO">Element 'id:failed-alert' is displayed.</msg>
+<status status="PASS" starttime="20221027 22:07:37.898" endtime="20221027 22:07:37.979"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:28.883" endtime="20221027 22:59:31.420"/>
+<status status="PASS" starttime="20221027 22:07:37.980" endtime="20221027 22:07:40.470"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:28.365" endtime="20221027 22:59:31.420"/>
+<status status="PASS" starttime="20221027 22:07:36.952" endtime="20221027 22:07:40.470"/>
 </test>
 <test id="s1-t2" name="Scenario: Agregar una receta con el formato incorrecto - Pasos" line="43">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 22:59:31.421" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 22:59:31.421" endtime="20221027 22:59:31.474"/>
+<msg timestamp="20221027 22:07:40.473" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<status status="PASS" starttime="20221027 22:07:40.472" endtime="20221027 22:07:40.558"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id=explanation</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 22:59:31.474" endtime="20221027 22:59:31.481"/>
+<status status="PASS" starttime="20221027 22:07:40.559" endtime="20221027 22:07:40.575"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:31.487" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.481" endtime="20221027 22:59:31.487"/>
+<msg timestamp="20221027 22:07:40.588" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:40.576" endtime="20221027 22:07:40.589"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:anadirReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.488" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.487" endtime="20221027 22:59:31.571"/>
+<msg timestamp="20221027 22:07:40.590" level="INFO">Clicking button 'id:anadirReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:40.589" endtime="20221027 22:07:40.749"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Añadir receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:31.580" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.571" endtime="20221027 22:59:31.580"/>
+<msg timestamp="20221027 22:07:40.765" level="INFO">Current page contains text 'Añadir receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:40.750" endtime="20221027 22:07:40.765"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.581" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.580" endtime="20221027 22:59:31.651"/>
+<msg timestamp="20221027 22:07:40.766" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:40.766" endtime="20221027 22:07:40.877"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.652" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:40.878" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.651" endtime="20221027 22:59:31.724"/>
+<status status="PASS" starttime="20221027 22:07:40.877" endtime="20221027 22:07:41.012"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1 Paso2 Paso3</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.725" level="INFO">Typing text 'Paso1 Paso2 Paso3' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.724" endtime="20221027 22:59:31.791"/>
+<msg timestamp="20221027 22:07:41.013" level="INFO">Typing text 'Paso1 Paso2 Paso3' into text field 'name:pasos'.</msg>
+<status status="PASS" starttime="20221027 22:07:41.012" endtime="20221027 22:07:41.127"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ROBOT</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.792" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.792" endtime="20221027 22:59:31.849"/>
+<msg timestamp="20221027 22:07:41.128" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:41.127" endtime="20221027 22:07:41.222"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.850" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:31.850" endtime="20221027 22:59:31.873"/>
+<msg timestamp="20221027 22:07:41.224" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:41.223" endtime="20221027 22:07:41.263"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:31.874" endtime="20221027 22:59:31.885"/>
+<status status="PASS" starttime="20221027 22:07:41.263" endtime="20221027 22:07:41.285"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:31.886" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:31.886" endtime="20221027 22:59:31.925"/>
+<msg timestamp="20221027 22:07:41.287" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:41.286" endtime="20221027 22:07:41.348"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221027 22:59:31.941" level="INFO">Element 'id:failed-alert' is displayed.</msg>
-<status status="PASS" starttime="20221027 22:59:31.925" endtime="20221027 22:59:31.941"/>
+<msg timestamp="20221027 22:07:41.374" level="INFO">Element 'id:failed-alert' is displayed.</msg>
+<status status="PASS" starttime="20221027 22:07:41.349" endtime="20221027 22:07:41.374"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:31.941" endtime="20221027 22:59:34.467"/>
+<status status="PASS" starttime="20221027 22:07:41.375" endtime="20221027 22:07:43.859"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:31.420" endtime="20221027 22:59:34.468"/>
+<status status="PASS" starttime="20221027 22:07:40.472" endtime="20221027 22:07:43.860"/>
 </test>
 <test id="s1-t3" name="Scenario: Agregar una receta con falta de información - Imagen" line="59">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 22:59:34.469" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 22:59:34.469" endtime="20221027 22:59:34.499"/>
+<msg timestamp="20221027 22:07:43.862" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<status status="PASS" starttime="20221027 22:07:43.861" endtime="20221027 22:07:43.909"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id=explanation</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 22:59:34.500" endtime="20221027 22:59:34.505"/>
+<status status="PASS" starttime="20221027 22:07:43.914" endtime="20221027 22:07:43.924"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:34.511" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.505" endtime="20221027 22:59:34.511"/>
+<msg timestamp="20221027 22:07:43.936" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:43.924" endtime="20221027 22:07:43.936"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:anadirReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.512" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.512" endtime="20221027 22:59:34.596"/>
+<msg timestamp="20221027 22:07:43.938" level="INFO">Clicking button 'id:anadirReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:43.937" endtime="20221027 22:07:44.088"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Añadir receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:34.604" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.596" endtime="20221027 22:59:34.604"/>
+<msg timestamp="20221027 22:07:44.099" level="INFO">Current page contains text 'Añadir receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.088" endtime="20221027 22:07:44.099"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.605" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.604" endtime="20221027 22:59:34.663"/>
+<msg timestamp="20221027 22:07:44.100" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.099" endtime="20221027 22:07:44.194"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.663" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:44.195" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.663" endtime="20221027 22:59:34.729"/>
+<status status="PASS" starttime="20221027 22:07:44.194" endtime="20221027 22:07:44.297"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.730" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:44.299" level="INFO">Typing text 'Paso1
 Paso2
 Paso3' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.730" endtime="20221027 22:59:34.792"/>
+<status status="PASS" starttime="20221027 22:07:44.298" endtime="20221027 22:07:44.385"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ROBOT</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.793" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.793" endtime="20221027 22:59:34.853"/>
+<msg timestamp="20221027 22:07:44.386" level="INFO">Typing text 'ROBOT' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.385" endtime="20221027 22:07:44.464"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:34.853" endtime="20221027 22:59:34.866"/>
+<status status="PASS" starttime="20221027 22:07:44.466" endtime="20221027 22:07:44.483"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:34.866" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:34.866" endtime="20221027 22:59:34.919"/>
+<msg timestamp="20221027 22:07:44.483" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.483" endtime="20221027 22:07:44.560"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20221027 22:59:34.939" level="INFO">Element 'id:success-alert' exists but is not displayed.</msg>
-<status status="PASS" starttime="20221027 22:59:34.919" endtime="20221027 22:59:34.939"/>
+<msg timestamp="20221027 22:07:44.591" level="INFO">Element 'id:success-alert' exists but is not displayed.</msg>
+<status status="PASS" starttime="20221027 22:07:44.561" endtime="20221027 22:07:44.591"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:34.468" endtime="20221027 22:59:34.939"/>
+<status status="PASS" starttime="20221027 22:07:43.861" endtime="20221027 22:07:44.591"/>
 </test>
 <test id="s1-t4" name="Scenario: Agregar receta correcta + editar + limite de campos + eliminar" line="73">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 22:59:34.941" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 22:59:34.940" endtime="20221027 22:59:35.085"/>
+<msg timestamp="20221027 22:07:44.594" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<status status="PASS" starttime="20221027 22:07:44.594" endtime="20221027 22:07:44.812"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id=explanation</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 22:59:35.085" endtime="20221027 22:59:35.091"/>
+<status status="PASS" starttime="20221027 22:07:44.812" endtime="20221027 22:07:44.822"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:35.097" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.091" endtime="20221027 22:59:35.097"/>
+<msg timestamp="20221027 22:07:44.832" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.822" endtime="20221027 22:07:44.833"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:anadirReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.098" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.098" endtime="20221027 22:59:35.177"/>
+<msg timestamp="20221027 22:07:44.833" level="INFO">Clicking button 'id:anadirReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.833" endtime="20221027 22:07:44.940"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Añadir receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:35.184" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.177" endtime="20221027 22:59:35.184"/>
+<msg timestamp="20221027 22:07:44.950" level="INFO">Current page contains text 'Añadir receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.941" endtime="20221027 22:07:44.950"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.185" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.185" endtime="20221027 22:59:35.245"/>
+<msg timestamp="20221027 22:07:44.951" level="INFO">Typing text 'Sopaipilla' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:44.950" endtime="20221027 22:07:45.042"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.245" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:45.044" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.245" endtime="20221027 22:59:35.310"/>
+<status status="PASS" starttime="20221027 22:07:45.043" endtime="20221027 22:07:45.146"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.311" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:45.147" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.311" endtime="20221027 22:59:35.375"/>
+<status status="PASS" starttime="20221027 22:07:45.146" endtime="20221027 22:07:45.239"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.376" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.376" endtime="20221027 22:59:35.457"/>
+<msg timestamp="20221027 22:07:45.240" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:45.240" endtime="20221027 22:07:45.371"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.458" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:35.458" endtime="20221027 22:59:35.479"/>
+<msg timestamp="20221027 22:07:45.372" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:45.372" endtime="20221027 22:07:45.403"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:35.480" endtime="20221027 22:59:35.491"/>
+<status status="PASS" starttime="20221027 22:07:45.403" endtime="20221027 22:07:45.422"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:35.492" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:35.491" endtime="20221027 22:59:35.527"/>
+<msg timestamp="20221027 22:07:45.424" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:45.423" endtime="20221027 22:07:45.477"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:35.528" endtime="20221027 22:59:35.752"/>
+<status status="PASS" starttime="20221027 22:07:45.478" endtime="20221027 22:07:45.733"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:35.752" endtime="20221027 22:59:38.282"/>
+<status status="PASS" starttime="20221027 22:07:45.734" endtime="20221027 22:07:48.211"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:verRecetas</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.283" level="INFO">Clicking button 'id:verRecetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.282" endtime="20221027 22:59:38.350"/>
+<msg timestamp="20221027 22:07:48.212" level="INFO">Clicking button 'id:verRecetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.212" endtime="20221027 22:07:48.340"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:38.358" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.350" endtime="20221027 22:59:38.358"/>
+<msg timestamp="20221027 22:07:48.357" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.343" endtime="20221027 22:07:48.358"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:38.367" level="INFO">Current page contains text 'Sopaipilla'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.358" endtime="20221027 22:59:38.367"/>
+<msg timestamp="20221027 22:07:48.375" level="INFO">Current page contains text 'Sopaipilla'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.359" endtime="20221027 22:07:48.375"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.368" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.367" endtime="20221027 22:59:38.518"/>
+<msg timestamp="20221027 22:07:48.392" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.391" endtime="20221027 22:07:48.559"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:38.529" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.519" endtime="20221027 22:59:38.529"/>
+<msg timestamp="20221027 22:07:48.578" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.559" endtime="20221027 22:07:48.578"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Por: ABCDEFGHIJKLMNOPQRSTUVWXYZABCD</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:38.538" level="INFO">Current page contains text 'Por: ABCDEFGHIJKLMNOPQRSTUVWXYZABCD'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.529" endtime="20221027 22:59:38.538"/>
+<msg timestamp="20221027 22:07:48.596" level="INFO">Current page contains text 'Por: ABCDEFGHIJKLMNOPQRSTUVWXYZABCD'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.578" endtime="20221027 22:07:48.596"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:editarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.538" level="INFO">Clicking button 'id:editarReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.538" endtime="20221027 22:59:38.632"/>
+<msg timestamp="20221027 22:07:48.598" level="INFO">Clicking button 'id:editarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.596" endtime="20221027 22:07:48.758"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Editar receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:38.643" level="INFO">Current page contains text 'Editar receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.632" endtime="20221027 22:59:38.643"/>
+<msg timestamp="20221027 22:07:48.780" level="INFO">Current page contains text 'Editar receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.759" endtime="20221027 22:07:48.780"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla2</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.644" level="INFO">Typing text 'Sopaipilla2' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.643" endtime="20221027 22:59:38.707"/>
+<msg timestamp="20221027 22:07:48.781" level="INFO">Typing text 'Sopaipilla2' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.781" endtime="20221027 22:07:48.897"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.707" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:38.707" endtime="20221027 22:59:38.728"/>
+<msg timestamp="20221027 22:07:48.898" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:48.897" endtime="20221027 22:07:48.939"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Editar Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:38.729" level="INFO">Clicking button 'Editar Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:38.729" endtime="20221027 22:59:38.770"/>
+<msg timestamp="20221027 22:07:48.940" level="INFO">Clicking button 'Editar Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:48.940" endtime="20221027 22:07:49.013"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:38.771" endtime="20221027 22:59:38.999"/>
+<status status="PASS" starttime="20221027 22:07:49.016" endtime="20221027 22:07:49.272"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:38.999" endtime="20221027 22:59:41.531"/>
+<status status="PASS" starttime="20221027 22:07:49.272" endtime="20221027 22:07:51.564"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:verRecetas</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:41.532" level="INFO">Clicking button 'id:verRecetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.531" endtime="20221027 22:59:41.614"/>
+<msg timestamp="20221027 22:07:51.566" level="INFO">Clicking button 'id:verRecetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.565" endtime="20221027 22:07:51.691"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:41.622" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.614" endtime="20221027 22:59:41.622"/>
+<msg timestamp="20221027 22:07:51.707" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.691" endtime="20221027 22:07:51.708"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla2</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:41.630" level="INFO">Current page contains text 'Sopaipilla2'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.622" endtime="20221027 22:59:41.630"/>
+<msg timestamp="20221027 22:07:51.727" level="INFO">Current page contains text 'Sopaipilla2'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.708" endtime="20221027 22:07:51.727"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:41.631" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.631" endtime="20221027 22:59:41.715"/>
+<msg timestamp="20221027 22:07:51.728" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.728" endtime="20221027 22:07:51.871"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:41.723" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.715" endtime="20221027 22:59:41.723"/>
+<msg timestamp="20221027 22:07:51.883" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.872" endtime="20221027 22:07:51.883"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:41.724" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.724" endtime="20221027 22:59:41.870"/>
+<msg timestamp="20221027 22:07:51.885" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:51.884" endtime="20221027 22:07:52.033"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:41.878" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.870" endtime="20221027 22:59:41.878"/>
+<msg timestamp="20221027 22:07:52.045" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.034" endtime="20221027 22:07:52.046"/>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <arg>Sopaipilla2</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<msg timestamp="20221027 22:59:41.891" level="INFO">Current page does not contain text 'Sopaipilla2'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.879" endtime="20221027 22:59:41.891"/>
+<msg timestamp="20221027 22:07:52.068" level="INFO">Current page does not contain text 'Sopaipilla2'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.047" endtime="20221027 22:07:52.068"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:34.940" endtime="20221027 22:59:41.892"/>
+<status status="PASS" starttime="20221027 22:07:44.592" endtime="20221027 22:07:52.069"/>
 </test>
 <test id="s1-t5" name="Scenario: Agregar 11 recetas seguidas" line="110">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 22:59:41.893" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 22:59:41.893" endtime="20221027 22:59:41.909"/>
+<msg timestamp="20221027 22:07:52.071" level="INFO">Opening url 'http://localhost:8000/'</msg>
+<status status="PASS" starttime="20221027 22:07:52.071" endtime="20221027 22:07:52.097"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>id=explanation</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 22:59:41.910" endtime="20221027 22:59:41.915"/>
+<status status="PASS" starttime="20221027 22:07:52.098" endtime="20221027 22:07:52.109"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:41.923" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.916" endtime="20221027 22:59:41.923"/>
+<msg timestamp="20221027 22:07:52.121" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.109" endtime="20221027 22:07:52.121"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:anadirReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:41.924" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:41.923" endtime="20221027 22:59:42.010"/>
+<msg timestamp="20221027 22:07:52.122" level="INFO">Clicking button 'id:anadirReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.121" endtime="20221027 22:07:52.301"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Añadir receta</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 22:59:42.018" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.010" endtime="20221027 22:59:42.018"/>
+<msg timestamp="20221027 22:07:52.329" level="INFO">Current page contains text 'Añadir receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.302" endtime="20221027 22:07:52.329"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -528,64 +528,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.019" level="INFO">Typing text 'Sopaipilla1' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.019" endtime="20221027 22:59:42.080"/>
+<msg timestamp="20221027 22:07:52.331" level="INFO">Typing text 'Sopaipilla1' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.330" endtime="20221027 22:07:52.449"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.080" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:52.450" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.080" endtime="20221027 22:59:42.146"/>
+<status status="PASS" starttime="20221027 22:07:52.450" endtime="20221027 22:07:52.583"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.146" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:52.584" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.146" endtime="20221027 22:59:42.208"/>
+<status status="PASS" starttime="20221027 22:07:52.583" endtime="20221027 22:07:52.704"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.209" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.209" endtime="20221027 22:59:42.293"/>
+<msg timestamp="20221027 22:07:52.705" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.705" endtime="20221027 22:07:52.884"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.293" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:42.293" endtime="20221027 22:59:42.323"/>
+<msg timestamp="20221027 22:07:52.885" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:52.884" endtime="20221027 22:07:52.927"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:42.323" endtime="20221027 22:59:42.335"/>
+<status status="PASS" starttime="20221027 22:07:52.927" endtime="20221027 22:07:52.947"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:42.336" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:42.335" endtime="20221027 22:59:42.372"/>
+<msg timestamp="20221027 22:07:52.948" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:52.948" endtime="20221027 22:07:53.010"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:42.372" endtime="20221027 22:59:42.599"/>
+<status status="PASS" starttime="20221027 22:07:53.011" endtime="20221027 22:07:53.259"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:42.599" endtime="20221027 22:59:45.132"/>
+<status status="PASS" starttime="20221027 22:07:53.259" endtime="20221027 22:07:55.568"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:42.018" endtime="20221027 22:59:45.132"/>
+<status status="PASS" starttime="20221027 22:07:52.329" endtime="20221027 22:07:55.568"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -593,64 +593,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.132" level="INFO">Typing text 'Sopaipilla2' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:45.132" endtime="20221027 22:59:45.173"/>
+<msg timestamp="20221027 22:07:55.576" level="INFO">Typing text 'Sopaipilla2' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:55.568" endtime="20221027 22:07:55.684"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.173" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:55.684" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:45.173" endtime="20221027 22:59:45.223"/>
+<status status="PASS" starttime="20221027 22:07:55.684" endtime="20221027 22:07:55.788"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.223" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:55.790" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:45.223" endtime="20221027 22:59:45.272"/>
+<status status="PASS" starttime="20221027 22:07:55.789" endtime="20221027 22:07:55.879"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.273" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:45.272" endtime="20221027 22:59:45.333"/>
+<msg timestamp="20221027 22:07:55.880" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:55.879" endtime="20221027 22:07:55.967"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.334" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:45.333" endtime="20221027 22:59:45.348"/>
+<msg timestamp="20221027 22:07:55.969" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:55.968" endtime="20221027 22:07:56.001"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:45.348" endtime="20221027 22:59:45.359"/>
+<status status="PASS" starttime="20221027 22:07:56.001" endtime="20221027 22:07:56.024"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:45.359" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:45.359" endtime="20221027 22:59:45.387"/>
+<msg timestamp="20221027 22:07:56.028" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:56.024" endtime="20221027 22:07:56.097"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:45.387" endtime="20221027 22:59:45.608"/>
+<status status="PASS" starttime="20221027 22:07:56.097" endtime="20221027 22:07:56.351"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:45.608" endtime="20221027 22:59:48.136"/>
+<status status="PASS" starttime="20221027 22:07:56.351" endtime="20221027 22:07:58.656"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:45.132" endtime="20221027 22:59:48.136"/>
+<status status="PASS" starttime="20221027 22:07:55.568" endtime="20221027 22:07:58.656"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -658,64 +658,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.136" level="INFO">Typing text 'Sopaipilla3' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:48.136" endtime="20221027 22:59:48.177"/>
+<msg timestamp="20221027 22:07:58.658" level="INFO">Typing text 'Sopaipilla3' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:07:58.657" endtime="20221027 22:07:58.730"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.178" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:07:58.731" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:48.177" endtime="20221027 22:59:48.231"/>
+<status status="PASS" starttime="20221027 22:07:58.730" endtime="20221027 22:07:58.817"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.231" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:07:58.818" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:48.231" endtime="20221027 22:59:48.279"/>
+<status status="PASS" starttime="20221027 22:07:58.817" endtime="20221027 22:07:58.894"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.280" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:48.279" endtime="20221027 22:59:48.356"/>
+<msg timestamp="20221027 22:07:58.895" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:07:58.894" endtime="20221027 22:07:58.997"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.356" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:48.356" endtime="20221027 22:59:48.373"/>
+<msg timestamp="20221027 22:07:58.998" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:07:58.997" endtime="20221027 22:07:59.037"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:48.373" endtime="20221027 22:59:48.384"/>
+<status status="PASS" starttime="20221027 22:07:59.038" endtime="20221027 22:07:59.058"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:48.385" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:48.384" endtime="20221027 22:59:48.410"/>
+<msg timestamp="20221027 22:07:59.060" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:07:59.059" endtime="20221027 22:07:59.114"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:48.410" endtime="20221027 22:59:48.631"/>
+<status status="PASS" starttime="20221027 22:07:59.114" endtime="20221027 22:07:59.364"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:48.631" endtime="20221027 22:59:51.155"/>
+<status status="PASS" starttime="20221027 22:07:59.364" endtime="20221027 22:08:01.825"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:48.136" endtime="20221027 22:59:51.155"/>
+<status status="PASS" starttime="20221027 22:07:58.656" endtime="20221027 22:08:01.825"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -723,64 +723,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.156" level="INFO">Typing text 'Sopaipilla4' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:51.155" endtime="20221027 22:59:51.196"/>
+<msg timestamp="20221027 22:08:01.826" level="INFO">Typing text 'Sopaipilla4' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:01.825" endtime="20221027 22:08:01.884"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.197" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:01.885" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:51.197" endtime="20221027 22:59:51.246"/>
+<status status="PASS" starttime="20221027 22:08:01.884" endtime="20221027 22:08:01.947"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.246" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:01.948" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:51.246" endtime="20221027 22:59:51.297"/>
+<status status="PASS" starttime="20221027 22:08:01.947" endtime="20221027 22:08:02.008"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.297" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:51.297" endtime="20221027 22:59:51.356"/>
+<msg timestamp="20221027 22:08:02.009" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:02.009" endtime="20221027 22:08:02.092"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.357" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:51.357" endtime="20221027 22:59:51.373"/>
+<msg timestamp="20221027 22:08:02.093" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:02.092" endtime="20221027 22:08:02.119"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:51.373" endtime="20221027 22:59:51.384"/>
+<status status="PASS" starttime="20221027 22:08:02.120" endtime="20221027 22:08:02.134"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:51.385" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:51.384" endtime="20221027 22:59:51.409"/>
+<msg timestamp="20221027 22:08:02.134" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:02.134" endtime="20221027 22:08:02.168"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:51.409" endtime="20221027 22:59:51.630"/>
+<status status="PASS" starttime="20221027 22:08:02.168" endtime="20221027 22:08:02.407"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:51.630" endtime="20221027 22:59:54.157"/>
+<status status="PASS" starttime="20221027 22:08:02.407" endtime="20221027 22:08:04.859"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:51.155" endtime="20221027 22:59:54.157"/>
+<status status="PASS" starttime="20221027 22:08:01.825" endtime="20221027 22:08:04.859"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -788,64 +788,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.158" level="INFO">Typing text 'Sopaipilla5' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:54.157" endtime="20221027 22:59:54.202"/>
+<msg timestamp="20221027 22:08:04.859" level="INFO">Typing text 'Sopaipilla5' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:04.859" endtime="20221027 22:08:04.934"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.203" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:04.935" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:54.202" endtime="20221027 22:59:54.254"/>
+<status status="PASS" starttime="20221027 22:08:04.935" endtime="20221027 22:08:05.011"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.254" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:05.012" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:54.254" endtime="20221027 22:59:54.303"/>
+<status status="PASS" starttime="20221027 22:08:05.011" endtime="20221027 22:08:05.080"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.304" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:54.304" endtime="20221027 22:59:54.381"/>
+<msg timestamp="20221027 22:08:05.082" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:05.081" endtime="20221027 22:08:05.180"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.382" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:54.381" endtime="20221027 22:59:54.399"/>
+<msg timestamp="20221027 22:08:05.181" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:05.180" endtime="20221027 22:08:05.211"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:54.399" endtime="20221027 22:59:54.411"/>
+<status status="PASS" starttime="20221027 22:08:05.212" endtime="20221027 22:08:05.232"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:54.411" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:54.411" endtime="20221027 22:59:54.438"/>
+<msg timestamp="20221027 22:08:05.234" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:05.233" endtime="20221027 22:08:05.282"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:54.438" endtime="20221027 22:59:54.660"/>
+<status status="PASS" starttime="20221027 22:08:05.282" endtime="20221027 22:08:05.530"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:54.660" endtime="20221027 22:59:57.188"/>
+<status status="PASS" starttime="20221027 22:08:05.531" endtime="20221027 22:08:08.001"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:54.157" endtime="20221027 22:59:57.188"/>
+<status status="PASS" starttime="20221027 22:08:04.859" endtime="20221027 22:08:08.001"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -853,64 +853,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.189" level="INFO">Typing text 'Sopaipilla6' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 22:59:57.189" endtime="20221027 22:59:57.231"/>
+<msg timestamp="20221027 22:08:08.002" level="INFO">Typing text 'Sopaipilla6' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:08.001" endtime="20221027 22:08:08.057"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.231" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:08.058" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 22:59:57.231" endtime="20221027 22:59:57.280"/>
+<status status="PASS" starttime="20221027 22:08:08.057" endtime="20221027 22:08:08.115"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.281" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:08.115" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 22:59:57.281" endtime="20221027 22:59:57.330"/>
+<status status="PASS" starttime="20221027 22:08:08.115" endtime="20221027 22:08:08.171"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.330" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 22:59:57.330" endtime="20221027 22:59:57.390"/>
+<msg timestamp="20221027 22:08:08.172" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:08.172" endtime="20221027 22:08:08.245"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.390" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 22:59:57.390" endtime="20221027 22:59:57.405"/>
+<msg timestamp="20221027 22:08:08.245" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:08.245" endtime="20221027 22:08:08.267"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:57.405" endtime="20221027 22:59:57.416"/>
+<status status="PASS" starttime="20221027 22:08:08.267" endtime="20221027 22:08:08.283"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 22:59:57.416" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 22:59:57.416" endtime="20221027 22:59:57.442"/>
+<msg timestamp="20221027 22:08:08.283" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:08.283" endtime="20221027 22:08:08.331"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 22:59:57.442" endtime="20221027 22:59:57.664"/>
+<status status="PASS" starttime="20221027 22:08:08.331" endtime="20221027 22:08:08.569"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 22:59:57.664" endtime="20221027 23:00:00.192"/>
+<status status="PASS" starttime="20221027 22:08:08.570" endtime="20221027 22:08:11.020"/>
 </kw>
-<status status="PASS" starttime="20221027 22:59:57.189" endtime="20221027 23:00:00.192"/>
+<status status="PASS" starttime="20221027 22:08:08.001" endtime="20221027 22:08:11.020"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -918,64 +918,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.192" level="INFO">Typing text 'Sopaipilla7' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:00.192" endtime="20221027 23:00:00.236"/>
+<msg timestamp="20221027 22:08:11.020" level="INFO">Typing text 'Sopaipilla7' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:11.020" endtime="20221027 22:08:11.069"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.237" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:11.069" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 23:00:00.236" endtime="20221027 23:00:00.290"/>
+<status status="PASS" starttime="20221027 22:08:11.069" endtime="20221027 22:08:11.129"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.291" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:11.130" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 23:00:00.290" endtime="20221027 23:00:00.341"/>
+<status status="PASS" starttime="20221027 22:08:11.129" endtime="20221027 22:08:11.189"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.341" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 23:00:00.341" endtime="20221027 23:00:00.406"/>
+<msg timestamp="20221027 22:08:11.190" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:11.189" endtime="20221027 22:08:11.266"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.407" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 23:00:00.406" endtime="20221027 23:00:00.422"/>
+<msg timestamp="20221027 22:08:11.267" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:11.266" endtime="20221027 22:08:11.291"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:00.422" endtime="20221027 23:00:00.432"/>
+<status status="PASS" starttime="20221027 22:08:11.291" endtime="20221027 22:08:11.304"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:00.432" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:00.432" endtime="20221027 23:00:00.460"/>
+<msg timestamp="20221027 22:08:11.305" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:11.304" endtime="20221027 22:08:11.343"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 23:00:00.460" endtime="20221027 23:00:00.681"/>
+<status status="PASS" starttime="20221027 22:08:11.343" endtime="20221027 22:08:11.584"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:00.681" endtime="20221027 23:00:03.207"/>
+<status status="PASS" starttime="20221027 22:08:11.584" endtime="20221027 22:08:14.021"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:00.192" endtime="20221027 23:00:03.207"/>
+<status status="PASS" starttime="20221027 22:08:11.020" endtime="20221027 22:08:14.021"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -983,64 +983,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.207" level="INFO">Typing text 'Sopaipilla8' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:03.207" endtime="20221027 23:00:03.248"/>
+<msg timestamp="20221027 22:08:14.022" level="INFO">Typing text 'Sopaipilla8' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:14.021" endtime="20221027 22:08:14.078"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.249" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:14.080" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 23:00:03.248" endtime="20221027 23:00:03.297"/>
+<status status="PASS" starttime="20221027 22:08:14.080" endtime="20221027 22:08:14.135"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.298" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:14.136" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 23:00:03.298" endtime="20221027 23:00:03.347"/>
+<status status="PASS" starttime="20221027 22:08:14.135" endtime="20221027 22:08:14.193"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.347" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 23:00:03.347" endtime="20221027 23:00:03.424"/>
+<msg timestamp="20221027 22:08:14.194" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:14.193" endtime="20221027 22:08:14.273"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.425" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 23:00:03.424" endtime="20221027 23:00:03.444"/>
+<msg timestamp="20221027 22:08:14.274" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:14.273" endtime="20221027 22:08:14.299"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:03.445" endtime="20221027 23:00:03.455"/>
+<status status="PASS" starttime="20221027 22:08:14.299" endtime="20221027 22:08:14.315"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:03.456" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:03.456" endtime="20221027 23:00:03.483"/>
+<msg timestamp="20221027 22:08:14.315" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:14.315" endtime="20221027 22:08:14.353"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 23:00:03.483" endtime="20221027 23:00:03.705"/>
+<status status="PASS" starttime="20221027 22:08:14.353" endtime="20221027 22:08:14.601"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:03.705" endtime="20221027 23:00:06.231"/>
+<status status="PASS" starttime="20221027 22:08:14.601" endtime="20221027 22:08:17.054"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:03.207" endtime="20221027 23:00:06.231"/>
+<status status="PASS" starttime="20221027 22:08:14.021" endtime="20221027 22:08:17.054"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -1048,64 +1048,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.231" level="INFO">Typing text 'Sopaipilla9' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:06.231" endtime="20221027 23:00:06.274"/>
+<msg timestamp="20221027 22:08:17.054" level="INFO">Typing text 'Sopaipilla9' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:17.054" endtime="20221027 22:08:17.109"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.274" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:17.110" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 23:00:06.274" endtime="20221027 23:00:06.325"/>
+<status status="PASS" starttime="20221027 22:08:17.109" endtime="20221027 22:08:17.166"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.326" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:17.167" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 23:00:06.325" endtime="20221027 23:00:06.374"/>
+<status status="PASS" starttime="20221027 22:08:17.167" endtime="20221027 22:08:17.223"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.375" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 23:00:06.374" endtime="20221027 23:00:06.434"/>
+<msg timestamp="20221027 22:08:17.224" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:17.223" endtime="20221027 22:08:17.297"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.434" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 23:00:06.434" endtime="20221027 23:00:06.450"/>
+<msg timestamp="20221027 22:08:17.298" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:17.297" endtime="20221027 22:08:17.320"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:06.450" endtime="20221027 23:00:06.462"/>
+<status status="PASS" starttime="20221027 22:08:17.320" endtime="20221027 22:08:17.334"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:06.462" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:06.462" endtime="20221027 23:00:06.487"/>
+<msg timestamp="20221027 22:08:17.334" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:17.334" endtime="20221027 22:08:17.371"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 23:00:06.487" endtime="20221027 23:00:06.708"/>
+<status status="PASS" starttime="20221027 22:08:17.372" endtime="20221027 22:08:17.605"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:06.708" endtime="20221027 23:00:09.233"/>
+<status status="PASS" starttime="20221027 22:08:17.605" endtime="20221027 22:08:20.035"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:06.231" endtime="20221027 23:00:09.233"/>
+<status status="PASS" starttime="20221027 22:08:17.054" endtime="20221027 22:08:20.035"/>
 </iter>
 <iter>
 <var name="${i}">10</var>
@@ -1113,64 +1113,64 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.234" level="INFO">Typing text 'Sopaipilla10' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:09.234" endtime="20221027 23:00:09.277"/>
+<msg timestamp="20221027 22:08:20.035" level="INFO">Typing text 'Sopaipilla10' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:20.035" endtime="20221027 22:08:20.088"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.278" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:20.089" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 23:00:09.278" endtime="20221027 23:00:09.328"/>
+<status status="PASS" starttime="20221027 22:08:20.088" endtime="20221027 22:08:20.150"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.329" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:20.151" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 23:00:09.328" endtime="20221027 23:00:09.379"/>
+<status status="PASS" starttime="20221027 22:08:20.150" endtime="20221027 22:08:20.209"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.379" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 23:00:09.379" endtime="20221027 23:00:09.442"/>
+<msg timestamp="20221027 22:08:20.210" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:20.210" endtime="20221027 22:08:20.283"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.443" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 23:00:09.442" endtime="20221027 23:00:09.458"/>
+<msg timestamp="20221027 22:08:20.284" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:20.283" endtime="20221027 22:08:20.308"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:09.458" endtime="20221027 23:00:09.469"/>
+<status status="PASS" starttime="20221027 22:08:20.309" endtime="20221027 22:08:20.323"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:09.470" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:09.469" endtime="20221027 23:00:09.494"/>
+<msg timestamp="20221027 22:08:20.324" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:20.323" endtime="20221027 22:08:20.361"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 23:00:09.494" endtime="20221027 23:00:09.716"/>
+<status status="PASS" starttime="20221027 22:08:20.361" endtime="20221027 22:08:20.596"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:09.716" endtime="20221027 23:00:12.247"/>
+<status status="PASS" starttime="20221027 22:08:20.596" endtime="20221027 22:08:23.020"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:09.233" endtime="20221027 23:00:12.247"/>
+<status status="PASS" starttime="20221027 22:08:20.035" endtime="20221027 22:08:23.020"/>
 </iter>
 <iter>
 <var name="${i}">11</var>
@@ -1178,144 +1178,144 @@ Paso3
 <arg>name:nombreReceta</arg>
 <arg>Sopaipilla${i}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.248" level="INFO">Typing text 'Sopaipilla11' into text field 'name:nombreReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:12.247" endtime="20221027 23:00:12.290"/>
+<msg timestamp="20221027 22:08:23.021" level="INFO">Typing text 'Sopaipilla11' into text field 'name:nombreReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:23.020" endtime="20221027 22:08:23.077"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:ingredientes</arg>
 <arg>Harina\nHuevos\nZapallo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.290" level="INFO">Typing text 'Harina
+<msg timestamp="20221027 22:08:23.078" level="INFO">Typing text 'Harina
 Huevos
 Zapallo' into text field 'name:ingredientes'.</msg>
-<status status="PASS" starttime="20221027 23:00:12.290" endtime="20221027 23:00:12.341"/>
+<status status="PASS" starttime="20221027 22:08:23.078" endtime="20221027 22:08:23.138"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:pasos</arg>
 <arg>Paso1\nPaso2\nPaso3\n</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.341" level="INFO">Typing text 'Paso1
+<msg timestamp="20221027 22:08:23.139" level="INFO">Typing text 'Paso1
 Paso2
 Paso3
 ' into text field 'name:pasos'.</msg>
-<status status="PASS" starttime="20221027 23:00:12.341" endtime="20221027 23:00:12.390"/>
+<status status="PASS" starttime="20221027 22:08:23.138" endtime="20221027 22:08:23.196"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:autor</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.391" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
-<status status="PASS" starttime="20221027 23:00:12.390" endtime="20221027 23:00:12.452"/>
+<msg timestamp="20221027 22:08:23.197" level="INFO">Typing text 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234' into text field 'name:autor'.</msg>
+<status status="PASS" starttime="20221027 22:08:23.197" endtime="20221027 22:08:23.277"/>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <arg>name:imagenReceta</arg>
-<arg>D:\\Max\\Universidad\\.GitHub (Repositories)\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
+<arg>C:\\Users\\inaki\\OneDrive\\Documentos\\GitHub\\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\\recetario/sopaipilla.jpg</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.452" level="INFO">Sending D:\Max\Universidad\.GitHub (Repositories)\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
-<status status="PASS" starttime="20221027 23:00:12.452" endtime="20221027 23:00:12.467"/>
+<msg timestamp="20221027 22:08:23.278" level="INFO">Sending C:\Users\inaki\OneDrive\Documentos\GitHub\Pruebas-de-Software---Presentaciones-Django-RobotFramework-\recetario\sopaipilla.jpg to browser.</msg>
+<status status="PASS" starttime="20221027 22:08:23.277" endtime="20221027 22:08:23.300"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:failed-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:12.467" endtime="20221027 23:00:12.477"/>
+<status status="PASS" starttime="20221027 22:08:23.300" endtime="20221027 22:08:23.319"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Subir Receta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:12.478" level="INFO">Clicking button 'Subir Receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:12.478" endtime="20221027 23:00:12.504"/>
+<msg timestamp="20221027 22:08:23.319" level="INFO">Clicking button 'Subir Receta'.</msg>
+<status status="PASS" starttime="20221027 22:08:23.319" endtime="20221027 22:08:23.355"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221027 23:00:12.504" endtime="20221027 23:00:12.725"/>
+<status status="PASS" starttime="20221027 22:08:23.356" endtime="20221027 22:08:23.599"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>id:success-alert</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221027 23:00:12.725" endtime="20221027 23:00:15.253"/>
+<status status="PASS" starttime="20221027 22:08:23.600" endtime="20221027 22:08:26.036"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:12.247" endtime="20221027 23:00:15.253"/>
+<status status="PASS" starttime="20221027 22:08:23.020" endtime="20221027 22:08:26.036"/>
 </iter>
-<status status="PASS" starttime="20221027 22:59:42.018" endtime="20221027 23:00:15.253"/>
+<status status="PASS" starttime="20221027 22:07:52.329" endtime="20221027 22:08:26.036"/>
 </for>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:verRecetas</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:15.254" level="INFO">Clicking button 'id:verRecetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.253" endtime="20221027 23:00:15.346"/>
+<msg timestamp="20221027 22:08:26.037" level="INFO">Clicking button 'id:verRecetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.037" endtime="20221027 22:08:26.169"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.358" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.346" endtime="20221027 23:00:15.358"/>
+<msg timestamp="20221027 22:08:26.192" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.169" endtime="20221027 22:08:26.192"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla1</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.367" level="INFO">Current page contains text 'Sopaipilla1'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.358" endtime="20221027 23:00:15.368"/>
+<msg timestamp="20221027 22:08:26.206" level="INFO">Current page contains text 'Sopaipilla1'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.192" endtime="20221027 22:08:26.207"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla2</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.378" level="INFO">Current page contains text 'Sopaipilla2'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.368" endtime="20221027 23:00:15.378"/>
+<msg timestamp="20221027 22:08:26.222" level="INFO">Current page contains text 'Sopaipilla2'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.207" endtime="20221027 22:08:26.222"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla3</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.388" level="INFO">Current page contains text 'Sopaipilla3'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.379" endtime="20221027 23:00:15.388"/>
+<msg timestamp="20221027 22:08:26.234" level="INFO">Current page contains text 'Sopaipilla3'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.223" endtime="20221027 22:08:26.234"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla4</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.397" level="INFO">Current page contains text 'Sopaipilla4'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.388" endtime="20221027 23:00:15.397"/>
+<msg timestamp="20221027 22:08:26.249" level="INFO">Current page contains text 'Sopaipilla4'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.235" endtime="20221027 22:08:26.249"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla5</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.406" level="INFO">Current page contains text 'Sopaipilla5'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.398" endtime="20221027 23:00:15.406"/>
+<msg timestamp="20221027 22:08:26.262" level="INFO">Current page contains text 'Sopaipilla5'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.249" endtime="20221027 22:08:26.262"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla6</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.415" level="INFO">Current page contains text 'Sopaipilla6'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.407" endtime="20221027 23:00:15.415"/>
+<msg timestamp="20221027 22:08:26.275" level="INFO">Current page contains text 'Sopaipilla6'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.263" endtime="20221027 22:08:26.276"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla7</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.423" level="INFO">Current page contains text 'Sopaipilla7'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.415" endtime="20221027 23:00:15.423"/>
+<msg timestamp="20221027 22:08:26.290" level="INFO">Current page contains text 'Sopaipilla7'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.276" endtime="20221027 22:08:26.290"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla8</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.432" level="INFO">Current page contains text 'Sopaipilla8'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.424" endtime="20221027 23:00:15.432"/>
+<msg timestamp="20221027 22:08:26.301" level="INFO">Current page contains text 'Sopaipilla8'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.290" endtime="20221027 22:08:26.301"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla9</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.440" level="INFO">Current page contains text 'Sopaipilla9'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.432" endtime="20221027 23:00:15.440"/>
+<msg timestamp="20221027 22:08:26.315" level="INFO">Current page contains text 'Sopaipilla9'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.302" endtime="20221027 22:08:26.315"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla10</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.448" level="INFO">Current page contains text 'Sopaipilla10'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.441" endtime="20221027 23:00:15.448"/>
+<msg timestamp="20221027 22:08:26.328" level="INFO">Current page contains text 'Sopaipilla10'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.316" endtime="20221027 22:08:26.328"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Sopaipilla11</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.457" level="INFO">Current page contains text 'Sopaipilla11'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.448" endtime="20221027 23:00:15.457"/>
+<msg timestamp="20221027 22:08:26.344" level="INFO">Current page contains text 'Sopaipilla11'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.330" endtime="20221027 22:08:26.344"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${b}</var>
@@ -1326,363 +1326,331 @@ Paso3
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:15.458" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.457" endtime="20221027 23:00:15.559"/>
+<msg timestamp="20221027 22:08:26.346" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.345" endtime="20221027 22:08:26.570"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.569" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.559" endtime="20221027 23:00:15.569"/>
+<msg timestamp="20221027 22:08:26.591" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.570" endtime="20221027 22:08:26.591"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:15.569" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.569" endtime="20221027 23:00:15.741"/>
+<msg timestamp="20221027 22:08:26.593" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.592" endtime="20221027 22:08:26.759"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.748" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.741" endtime="20221027 23:00:15.748"/>
+<msg timestamp="20221027 22:08:26.772" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.759" endtime="20221027 22:08:26.772"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:15.457" endtime="20221027 23:00:15.748"/>
+<status status="PASS" starttime="20221027 22:08:26.345" endtime="20221027 22:08:26.772"/>
 </iter>
 <iter>
 <var name="${b}">2</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:15.749" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.748" endtime="20221027 23:00:15.850"/>
+<msg timestamp="20221027 22:08:26.773" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.773" endtime="20221027 22:08:26.911"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:15.860" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.850" endtime="20221027 23:00:15.860"/>
+<msg timestamp="20221027 22:08:26.921" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.911" endtime="20221027 22:08:26.922"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:15.860" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:15.860" endtime="20221027 23:00:16.007"/>
+<msg timestamp="20221027 22:08:26.923" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:26.922" endtime="20221027 22:08:27.078"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.016" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.007" endtime="20221027 23:00:16.016"/>
+<msg timestamp="20221027 22:08:27.089" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.078" endtime="20221027 22:08:27.089"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:15.748" endtime="20221027 23:00:16.016"/>
+<status status="PASS" starttime="20221027 22:08:26.772" endtime="20221027 22:08:27.089"/>
 </iter>
 <iter>
 <var name="${b}">3</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.017" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.017" endtime="20221027 23:00:16.115"/>
+<msg timestamp="20221027 22:08:27.090" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.089" endtime="20221027 22:08:27.232"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.123" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.115" endtime="20221027 23:00:16.123"/>
+<msg timestamp="20221027 22:08:27.243" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.232" endtime="20221027 22:08:27.243"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.124" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.123" endtime="20221027 23:00:16.279"/>
+<msg timestamp="20221027 22:08:27.243" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.243" endtime="20221027 22:08:27.419"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.288" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.279" endtime="20221027 23:00:16.288"/>
+<msg timestamp="20221027 22:08:27.433" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.420" endtime="20221027 22:08:27.433"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:16.016" endtime="20221027 23:00:16.288"/>
+<status status="PASS" starttime="20221027 22:08:27.089" endtime="20221027 22:08:27.433"/>
 </iter>
 <iter>
 <var name="${b}">4</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.289" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.289" endtime="20221027 23:00:16.387"/>
+<msg timestamp="20221027 22:08:27.434" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.433" endtime="20221027 22:08:27.561"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.395" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.387" endtime="20221027 23:00:16.395"/>
+<msg timestamp="20221027 22:08:27.607" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.562" endtime="20221027 22:08:27.607"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.395" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.395" endtime="20221027 23:00:16.545"/>
+<msg timestamp="20221027 22:08:27.609" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.609" endtime="20221027 22:08:27.755"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.554" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.546" endtime="20221027 23:00:16.554"/>
+<msg timestamp="20221027 22:08:27.767" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.755" endtime="20221027 22:08:27.767"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:16.289" endtime="20221027 23:00:16.554"/>
+<status status="PASS" starttime="20221027 22:08:27.433" endtime="20221027 22:08:27.767"/>
 </iter>
 <iter>
 <var name="${b}">5</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.556" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.555" endtime="20221027 23:00:16.656"/>
+<msg timestamp="20221027 22:08:27.768" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.768" endtime="20221027 22:08:27.895"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.672" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.656" endtime="20221027 23:00:16.672"/>
+<msg timestamp="20221027 22:08:27.912" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.895" endtime="20221027 22:08:27.912"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.673" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.672" endtime="20221027 23:00:16.820"/>
+<msg timestamp="20221027 22:08:27.913" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:27.913" endtime="20221027 22:08:28.056"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.828" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.820" endtime="20221027 23:00:16.828"/>
+<msg timestamp="20221027 22:08:28.068" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.056" endtime="20221027 22:08:28.068"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:16.555" endtime="20221027 23:00:16.828"/>
+<status status="PASS" starttime="20221027 22:08:27.767" endtime="20221027 22:08:28.068"/>
 </iter>
 <iter>
 <var name="${b}">6</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.829" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.828" endtime="20221027 23:00:16.922"/>
+<msg timestamp="20221027 22:08:28.069" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.068" endtime="20221027 22:08:28.224"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:16.945" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.922" endtime="20221027 23:00:16.946"/>
+<msg timestamp="20221027 22:08:28.248" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.225" endtime="20221027 22:08:28.248"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:16.946" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:16.946" endtime="20221027 23:00:17.103"/>
+<msg timestamp="20221027 22:08:28.249" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.248" endtime="20221027 22:08:28.393"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.112" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.103" endtime="20221027 23:00:17.112"/>
+<msg timestamp="20221027 22:08:28.404" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.394" endtime="20221027 22:08:28.405"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:16.828" endtime="20221027 23:00:17.112"/>
+<status status="PASS" starttime="20221027 22:08:28.068" endtime="20221027 22:08:28.405"/>
 </iter>
 <iter>
 <var name="${b}">7</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.112" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.112" endtime="20221027 23:00:17.193"/>
+<msg timestamp="20221027 22:08:28.406" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.405" endtime="20221027 22:08:28.557"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.203" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.193" endtime="20221027 23:00:17.203"/>
+<msg timestamp="20221027 22:08:28.570" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.558" endtime="20221027 22:08:28.571"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.204" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.203" endtime="20221027 23:00:17.343"/>
+<msg timestamp="20221027 22:08:28.572" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.571" endtime="20221027 22:08:28.707"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.356" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.343" endtime="20221027 23:00:17.356"/>
+<msg timestamp="20221027 22:08:28.722" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.708" endtime="20221027 22:08:28.722"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:17.112" endtime="20221027 23:00:17.356"/>
+<status status="PASS" starttime="20221027 22:08:28.405" endtime="20221027 22:08:28.722"/>
 </iter>
 <iter>
 <var name="${b}">8</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.357" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.356" endtime="20221027 23:00:17.443"/>
+<msg timestamp="20221027 22:08:28.724" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.723" endtime="20221027 22:08:28.874"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.451" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.443" endtime="20221027 23:00:17.451"/>
+<msg timestamp="20221027 22:08:28.901" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.875" endtime="20221027 22:08:28.901"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.452" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.451" endtime="20221027 23:00:17.601"/>
+<msg timestamp="20221027 22:08:28.901" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:28.901" endtime="20221027 22:08:29.022"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.609" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.601" endtime="20221027 23:00:17.610"/>
+<msg timestamp="20221027 22:08:29.032" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.022" endtime="20221027 22:08:29.032"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:17.356" endtime="20221027 23:00:17.610"/>
+<status status="PASS" starttime="20221027 22:08:28.723" endtime="20221027 22:08:29.032"/>
 </iter>
 <iter>
 <var name="${b}">9</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.610" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.610" endtime="20221027 23:00:17.731"/>
+<msg timestamp="20221027 22:08:29.033" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.033" endtime="20221027 22:08:29.147"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.741" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.731" endtime="20221027 23:00:17.741"/>
+<msg timestamp="20221027 22:08:29.156" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.147" endtime="20221027 22:08:29.156"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.742" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.742" endtime="20221027 23:00:17.895"/>
+<msg timestamp="20221027 22:08:29.157" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.157" endtime="20221027 22:08:29.322"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:17.904" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.895" endtime="20221027 23:00:17.904"/>
+<msg timestamp="20221027 22:08:29.333" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.323" endtime="20221027 22:08:29.333"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:17.610" endtime="20221027 23:00:17.904"/>
+<status status="PASS" starttime="20221027 22:08:29.033" endtime="20221027 22:08:29.333"/>
 </iter>
 <iter>
 <var name="${b}">10</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:17.904" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.904" endtime="20221027 23:00:17.992"/>
+<msg timestamp="20221027 22:08:29.334" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.333" endtime="20221027 22:08:29.475"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.002" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:17.993" endtime="20221027 23:00:18.002"/>
+<msg timestamp="20221027 22:08:29.486" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.475" endtime="20221027 22:08:29.486"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:18.003" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.002" endtime="20221027 23:00:18.161"/>
+<msg timestamp="20221027 22:08:29.486" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.486" endtime="20221027 22:08:29.618"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.174" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.161" endtime="20221027 23:00:18.174"/>
+<msg timestamp="20221027 22:08:29.636" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.618" endtime="20221027 22:08:29.636"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:17.904" endtime="20221027 23:00:18.174"/>
+<status status="PASS" starttime="20221027 22:08:29.333" endtime="20221027 22:08:29.637"/>
 </iter>
 <iter>
 <var name="${b}">11</var>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>name:verReceta</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:18.174" level="INFO">Clicking link 'name:verReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.174" endtime="20221027 23:00:18.255"/>
+<msg timestamp="20221027 22:08:29.638" level="INFO">Clicking link 'name:verReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.637" endtime="20221027 22:08:29.741"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Preparacion:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.267" level="INFO">Current page contains text 'Preparacion:'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.255" endtime="20221027 23:00:18.267"/>
+<msg timestamp="20221027 22:08:29.752" level="INFO">Current page contains text 'Preparacion:'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.742" endtime="20221027 22:08:29.752"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:eliminarReceta</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:18.267" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.267" endtime="20221027 23:00:18.429"/>
+<msg timestamp="20221027 22:08:29.753" level="INFO">Clicking button 'id:eliminarReceta'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.752" endtime="20221027 22:08:29.891"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Ver recetas</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.437" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.429" endtime="20221027 23:00:18.437"/>
+<msg timestamp="20221027 22:08:29.905" level="INFO">Current page contains text 'Ver recetas'.</msg>
+<status status="PASS" starttime="20221027 22:08:29.891" endtime="20221027 22:08:29.905"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:18.174" endtime="20221027 23:00:18.437"/>
+<status status="PASS" starttime="20221027 22:08:29.637" endtime="20221027 22:08:29.905"/>
 </iter>
-<status status="PASS" starttime="20221027 23:00:15.457" endtime="20221027 23:00:18.437"/>
+<status status="PASS" starttime="20221027 22:08:26.345" endtime="20221027 22:08:29.905"/>
 </for>
-<status status="PASS" starttime="20221027 22:59:41.892" endtime="20221027 23:00:18.438"/>
-</test>
-<test id="s1-t6" name="Scenario: As a visitor I can visit the django default page" line="149">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${SERVER}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221027 23:00:18.439" level="INFO">Opening url 'http://localhost:8000/'</msg>
-<status status="PASS" starttime="20221027 23:00:18.439" endtime="20221027 23:00:18.455"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>id=explanation</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20221027 23:00:18.456" endtime="20221027 23:00:18.465"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Ver recetas</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.471" level="INFO">Current page contains text 'Ver recetas'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.465" endtime="20221027 23:00:18.471"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>id:anadirReceta</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221027 23:00:18.472" level="INFO">Clicking button 'id:anadirReceta'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.472" endtime="20221027 23:00:18.558"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Añadir receta</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221027 23:00:18.568" level="INFO">Current page contains text 'Añadir receta'.</msg>
-<status status="PASS" starttime="20221027 23:00:18.559" endtime="20221027 23:00:18.568"/>
-</kw>
-<status status="PASS" starttime="20221027 23:00:18.438" endtime="20221027 23:00:18.568"/>
+<status status="PASS" starttime="20221027 22:07:52.070" endtime="20221027 22:08:29.906"/>
 </test>
 <kw name="close browserr" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221027 23:00:18.570" endtime="20221027 23:00:20.666"/>
+<status status="PASS" starttime="20221027 22:08:29.909" endtime="20221027 22:08:32.029"/>
 </kw>
-<status status="PASS" starttime="20221027 23:00:18.570" endtime="20221027 23:00:20.666"/>
+<status status="PASS" starttime="20221027 22:08:29.908" endtime="20221027 22:08:32.030"/>
 </kw>
 <doc>Django Robot Tests</doc>
-<status status="PASS" starttime="20221027 22:59:26.481" endtime="20221027 23:00:20.666"/>
+<status status="PASS" starttime="20221027 22:07:33.960" endtime="20221027 22:08:32.030"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="6" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>

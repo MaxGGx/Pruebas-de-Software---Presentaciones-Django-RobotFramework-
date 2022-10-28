@@ -1,6 +1,6 @@
 # Software-Testing - Pruebas en Django & RobotFramework
 
-Desarrollo de aplicación Web basada en Django junto a Robot Framework para desarrollo de presentaciones, ejecución y documentación de casos de prueba.
+Desarrollo de aplicación Web basada en Django junto a Robot Framework para desarrollo de presentaciones, ejecución y documentación de casos de prueba. <br>
 [ENG] Develop on a WebApp based on Django and Robot Framework for presentations about testing cases and documentation.
 
 ## Pre-requisitos | Pre-requisites 📋

@@ -25,6 +25,59 @@ close browserr
 
 *** Test Cases ***
 
+Scenario: Agregar receta
+  Go To  ${SERVER}
+  Wait until page contains element  id=explanation
+  Page Should Contain  Ver recetas
+  Click Button  id:anadirReceta
+  Page Should Contain  Añadir receta
+  Input Text  name:nombreReceta  Sopaipilla
+  Input Text  name:ingredientes  Harina\nHuevos\nZapallo
+  Input Text  name:pasos  Paso1\nPaso2\nPaso3\n
+  Input Text  name:autor  ABCDEFGHIJKLMNOPQRSTUVWXYZABCD1234
+  Choose File  name:imagenReceta  ${CURDIR}/sopaipilla.jpg
+  Wait Until Element Is Not Visible  id:failed-alert
+  Click Button  Subir Receta
+  Wait Until Element Is Visible  id:success-alert
+  Wait Until Element Is Not Visible  id:success-alert
+
+Scenario: Ver receta
+  Go To  ${SERVER}
+  Wait until page contains element  id=explanation
+  Page Should Contain  Ver recetas
+  Page Should Contain  Sopaipilla
+  Click Link  name:verReceta
+  Page Should Contain  Preparacion:
+
+Scenario: Actualizar receta
+  Go To  ${SERVER}
+  Wait until page contains element  id=explanation
+  Page Should Contain  Ver recetas
+  Page Should Contain  Sopaipilla
+  Click Link  name:verReceta
+  Page Should Contain  Preparacion:
+  Click Button  id:editarReceta
+  Page Should Contain  Editar receta
+  Input Text  name:nombreReceta  Sopaipilla2
+  Choose File  name:imagenReceta  ${CURDIR}/sopaipilla.jpg
+  Click Button  Editar Receta
+  Wait Until Element Is Visible  id:success-alert
+  Wait Until Element Is Not Visible  id:success-alert
+  Click Button  id:verRecetas
+  Page Should Contain  Ver recetas
+  Page Should Contain  Sopaipilla2
+
+Scenario: Eliminar receta
+  Go To  ${SERVER}
+  Wait until page contains element  id=explanation
+  Page Should Contain  Ver recetas
+  Page Should Contain  Sopaipilla2
+  Click Link  name:verReceta
+  Page Should Contain  Preparacion:
+  Click Button  id:eliminarReceta
+  Page Should Contain  Ver recetas
+  Page Should Not Contain  Sopaipilla2
+
 Scenario: Agregar una receta con el formato incorrecto - Ingredientes
   Go To  ${SERVER}
   Wait until page contains element  id=explanation

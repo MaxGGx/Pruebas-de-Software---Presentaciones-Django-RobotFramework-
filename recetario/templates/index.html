@@ -31,12 +31,12 @@
       <div class="sidebar-username">&#611; Recipes</div>
       <div class="sidebar-role">Tu lugar de cocina</div>
       <nav class="sidebar-menu">
-        <button type="button" onclick="location.href='/';">
+        <button type="button" id="verRecetas" onclick="location.href='/';">
           <img src="{% static '/assets/book-open-solid.svg' %}" />
           <span>Ver recetas</span>
         </button>
         
-        <button type="button" onclick="location.href='/add';">
+        <button type="button"  id="anadirReceta" onclick="location.href='/add';">
           <img src="{% static '/assets/file-circle-plus-solid.svg' %}" />
           <span>Añadir receta</span>
         </button>
@@ -51,7 +51,7 @@
           <img class="card-img-top" src="{{ receta.imagenReceta.url }}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title" style="color:Black">{{ receta.nombreReceta }}</h5>
-            <a href="/receta/{{ receta.id }}" class="btn btn-primary">Ver Receta</a>
+            <a href="/receta/{{ receta.id }}" name="verReceta" class="btn btn-primary">Ver Receta</a>
           </div>
         </div>
       {% endfor %}

@@ -7,7 +7,7 @@ Desarrollo de aplicación Web basada en Django junto a Robot Framework para desa
 
 - Python 3
 
-## Instalation | Instalation ⚙️
+## Instalación | Instalation ⚙️
 
 - Clonar el repositorio | Clone the repo
 - En la carpeta del repositorio crear un entorno virtual | In project folder create a virtual environment
